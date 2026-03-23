@@ -1,0 +1,689 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 18 13:28:21 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>511 seconds (511032 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n16_sqlInjectionInName()'><b>n16_sqlInjectionInName</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-16 | SQL injection attempt in Full Name — no crash or DB error</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : All fields are required.}
+  (Session info: chrome=146.0.7680.75): All fields are required.
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, findElement {value=body, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.buzzzworth.tests.BuzzzworthFormTest.n16_sqlInjectionInName(BuzzzworthFormTest.java:951)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace852633168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace852633168'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : All fields are required.}
+  (Session info: chrome=146.0.7680.75): All fields are required.
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, findElement {value=body, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.buzzzworth.tests.BuzzzworthFormTest.n16_sqlInjectionInName(BuzzzworthFormTest.java:951)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p04_serviceAllOptionsSelectable()'><b>p04_serviceAllOptionsSelectable</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-04 | All 7 service options can be selected from dropdown</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	P04-1: Exception selecting service &apos;Social Media Management&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.66BE1014828613DB2C297E8ED1772537.e.673}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-2: Exception selecting service &apos;Performance Marketing&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.BA021E09781A6FC23892DFBF8FC05C65.e.1047}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-3: Exception selecting service &apos;Social Media + Performance Marketing&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.3300F3E0503CD8AA4D58092AABC6F1A4.e.1421}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-4: Exception selecting service &apos;Campaign Strategy &amp; Execution&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.88BE77DD293C453305F4D8E7A8368413.e.1795}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-5: Exception selecting service &apos;Online Reputation Management&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.F7B921FBCE307CB968EDA2EF82CEE63D.e.2169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-6: Exception selecting service &apos;Complete Digital Marketing Setup&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.3749807F532ADA9366E43ACF0A8F63D6.e.2543}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-7: Exception selecting service &apos;Not Sure – Need Consultation&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.C2C4A5114FA29434DF24DD3DE2E24CF4.e.2918}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.buzzzworth.tests.BuzzzworthFormTest.p04_serviceAllOptionsSelectable(BuzzzworthFormTest.java:403)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1259283097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1259283097'><pre>java.lang.AssertionError: The following asserts failed:
+	P04-1: Exception selecting service &apos;Social Media Management&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.66BE1014828613DB2C297E8ED1772537.e.673}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-2: Exception selecting service &apos;Performance Marketing&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.BA021E09781A6FC23892DFBF8FC05C65.e.1047}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-3: Exception selecting service &apos;Social Media + Performance Marketing&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.3300F3E0503CD8AA4D58092AABC6F1A4.e.1421}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-4: Exception selecting service &apos;Campaign Strategy &amp; Execution&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.88BE77DD293C453305F4D8E7A8368413.e.1795}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-5: Exception selecting service &apos;Online Reputation Management&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.F7B921FBCE307CB968EDA2EF82CEE63D.e.2169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-6: Exception selecting service &apos;Complete Digital Marketing Setup&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.3749807F532ADA9366E43ACF0A8F63D6.e.2543}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456,
+	P04-7: Exception selecting service &apos;Not Sure – Need Consultation&apos;: element not interactable
+  (Session info: chrome=146.0.7680.75)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, clickElement {id=f.BB7316DBBC87ECA56C004D5FC6E1373E.d.C2C4A5114FA29434DF24DD3DE2E24CF4.e.2918}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (abd13d4f0f3c7e8fc54e3c011890a456)] -&gt; xpath: //*[contains(@class,&apos;option&apos;) or contains(@class,&apos;item&apos;) or @role=&apos;option&apos;]]
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.buzzzworth.tests.BuzzzworthFormTest.p04_serviceAllOptionsSelectable(BuzzzworthFormTest.java:403)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>182</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n04_serviceNotSelected()'><b>n04_serviceNotSelected</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-04 | Service dropdown left at placeholder — validation fires</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : All fields are required.}
+  (Session info: chrome=146.0.7680.75): All fields are required.
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, findElement {value=body, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.buzzzworth.tests.BuzzzworthFormTest.hasValidationError(BuzzzworthFormTest.java:264)
+	at com.buzzzworth.tests.BuzzzworthFormTest.n04_serviceNotSelected(BuzzzworthFormTest.java:669)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1633717786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1633717786'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : All fields are required.}
+  (Session info: chrome=146.0.7680.75): All fields are required.
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-106-generic&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abd13d4f0f3c7e8fc54e3c011890a456, findElement {value=body, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.75, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41857}, goog:processID: 13604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41857/devtoo..., se:cdpVersion: 146.0.7680.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abd13d4f0f3c7e8fc54e3c011890a456
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.buzzzworth.tests.BuzzzworthFormTest.hasValidationError(BuzzzworthFormTest.java:264)
+	at com.buzzzworth.tests.BuzzzworthFormTest.n04_serviceNotSelected(BuzzzworthFormTest.java:669)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n17_xssInQuery()'><b>n17_xssInQuery</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-17 | XSS script tag in Query — not executed, no JS alert appears</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	N17-1: XSS alert was triggered — script executed! This is a SECURITY VULNERABILITY.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.buzzzworth.tests.BuzzzworthFormTest.n17_xssInQuery(BuzzzworthFormTest.java:993)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace499950630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499950630'><pre>java.lang.AssertionError: The following asserts failed:
+	N17-1: XSS alert was triggered — script executed! This is a SECURITY VULNERABILITY.
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.buzzzworth.tests.BuzzzworthFormTest.n17_xssInQuery(BuzzzworthFormTest.java:993)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p10_tabKeyNavigation()'><b>p10_tabKeyNavigation</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-10 | Tab key moves focus across all 6 form fields in sequence</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n12_phoneTooShort()'><b>n12_phoneTooShort</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-12 | Phone with only 3 digits — validation error expected</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n05_companyNameBlank()'><b>n05_companyNameBlank</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-05 | Company Name left blank — validation fires</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p01_allFieldsValid()'><b>p01_allFieldsValid</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-01 | All 6 fields filled with valid data — no error message visible</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p07_queryMultilineText()'><b>p07_queryMultilineText</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-07 | Your Query textarea accepts multi-line and long text</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p08_countryCodeDefault()'><b>p08_countryCodeDefault</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-08 | Phone country code shows India (+91) as default</td>
+<td></td>
+<td>3</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p03_phoneValidTenDigit()'><b>p03_phoneValidTenDigit</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-03 | Phone field accepts 10-digit Indian mobile number</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n15_nameNumbersOnly()'><b>n15_nameNumbersOnly</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-15 | Full Name with numbers only — logs acceptance or rejection</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n07_queryBlank()'><b>n07_queryBlank</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-07 | Your Query left blank — validation fires</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n20_onlyServiceFilledRestBlank()'><b>n20_onlyServiceFilledRestBlank</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-20 | Only service dropdown filled, all others blank — validation fires</td>
+<td></td>
+<td>23</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p02_fullNameAlphaSpace()'><b>p02_fullNameAlphaSpace</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-02 | Full Name accepts alphabets with spaces (first + last name)</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n13_phoneTooLong()'><b>n13_phoneTooLong</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-13 | Phone with 15 digits — truncated by maxlength or error shown</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n11_phoneWithLetters()'><b>n11_phoneWithLetters</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-11 | Phone field with alphabetic input — rejected or stripped</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n18_fullName300Chars()'><b>n18_fullName300Chars</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-18 | Full Name 300 characters — page does not crash</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n09_emailNoDomain()'><b>n09_emailNoDomain</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-09 | Company Email with @ but no domain (e.g. rahul@) — rejected</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n06_emailBlank()'><b>n06_emailBlank</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-06 | Company Email left blank — validation fires</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p06_emailValidFormats()'><b>p06_emailValidFormats</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-06 | Company Email accepts standard .com, .in, +tag formats</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n01_allFieldsEmpty()'><b>n01_allFieldsEmpty</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-01 | All 6 fields blank — submit triggers validation error message</td>
+<td></td>
+<td>3</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n03_phoneBlank()'><b>n03_phoneBlank</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-03 | Phone left blank, all others filled — validation fires</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n19_query1000Chars()'><b>n19_query1000Chars</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-19 | Your Query with 1000 characters — page does not crash</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p09_fieldsRetainValues()'><b>p09_fieldsRetainValues</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-09 | Values entered in fields are not cleared on tab / focus change</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.p05_companyNameAlphanumeric()'><b>p05_companyNameAlphanumeric</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: P-05 | Company Name accepts alphanumeric characters and spaces</td>
+<td></td>
+<td>1</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n02_fullNameBlank()'><b>n02_fullNameBlank</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-02 | Full Name left blank, all others filled — validation fires</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n08_emailNoAtSymbol()'><b>n08_emailNoAtSymbol</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-08 | Company Email without '@' — email format validation error</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n14_nameSpacesOnly()'><b>n14_nameSpacesOnly</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-14 | Full Name filled with only spaces — treated as empty or error</td>
+<td></td>
+<td>25</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+<tr>
+<td title='com.buzzzworth.tests.BuzzzworthFormTest.n10_emailWithSpaces()'><b>n10_emailWithSpaces</b><br>Test class: com.buzzzworth.tests.BuzzzworthFormTest<br>Test method: N-10 | Company Email with embedded space — rejected as invalid</td>
+<td></td>
+<td>2</td>
+<td>com.buzzzworth.tests.BuzzzworthFormTest@fa4c865</td></tr>
+</table><p>
+</body>
+</html>

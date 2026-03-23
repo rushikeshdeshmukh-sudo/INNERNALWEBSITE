@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.buzzzworth.tests.BuzzzworthFormTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="p04_serviceAllOptionsSelectable"/>
+          <include name="n16_sqlInjectionInName"/>
+          <include name="tearDown"/>
+          <include name="n04_serviceNotSelected"/>
+          <include name="n17_xssInQuery"/>
+        </methods>
+      </class> <!-- com.buzzzworth.tests.BuzzzworthFormTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
